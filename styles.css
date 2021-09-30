@@ -109,7 +109,7 @@ main {
 .main-exchange-container {
     width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding-top : 60px;
     text-align: center;
 }
 
@@ -145,13 +145,22 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    align-items: center;
+    height: 353px;
+    padding: 60px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .currency-table, .commission-table {
     width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 241px;
     margin: 0 auto;
-    margin-bottom: 64px;
+    min-width: 235px;
+    max-width: 400px;
+    scroll-snap-align: center;
 }
 
 .currency-table .currency-table__title {
@@ -252,10 +261,6 @@ main {
     padding: 8px;
 }
 
-.commission-table {
-    margin-top: 64px;
-}
-
 .commission-table .commission-table__title {
     color: var(--secondary-blue);
     font-size: 1.8rem;
@@ -272,7 +277,6 @@ main {
     margin: 0 auto;
     background-color: var(--soft-blue);
     border-radius: 8px;
-    margin-bottom: 64px;
 }
 
 .commission-table__date p {
@@ -326,7 +330,9 @@ main {
 
 .product-details__container {
     width: 100%;
+    max-width: 770px;
     height: auto;
+    margin: 0 auto;
 }
 
 .product-details__card {
@@ -402,4 +408,154 @@ main {
     font-size: 2.4rem;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+.plan-information__container {
+    width: 100%;
+    min-width: 320px;
+    padding: 64px 0;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plan-information__title {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.plan-information__title h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--black);
+    padding-bottom: 24px;
+}
+
+.plan-information__title p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plan-information__card-container {
+    height: 276px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plan-information__card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    max-width: 300px;
+    height: 247px;
+    margin: 0 auto;
+    padding: 31px 16px 24px 16px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(89, 73, 30, 0.16) ;
+    font-family: 'Inter', sans-serif;
+}
+
+.recommended {
+    position: absolute;
+    top: calc(0% - 15px);
+    left: calc(50% - 50px);
+    padding: 8px;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-style: normal;
+}
+
+.plan-information__prices h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding-bottom: 8px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-information__prices-price {
+    height: 56px;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: bold;
+    letter-spacing: -0.3rem;
+}
+
+.plan-information__prices-price sup {
+    width: 8px;
+    height: 15px;
+    font-weight: normal;
+    position: absolute;
+    top: calc(0% + 66px);
+    left: calc(50% - 65px/2 - 12px);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.plan-information__prices-save {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+}
+
+.plan-information__prices-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 12px 15px 16px;
+    margin: 16px auto;
+    width: 151px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    color: var(--black);
+    background-color: var(--off-white);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.plan-information__prices-button span {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links li {
+    margin-bottom: 8px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
