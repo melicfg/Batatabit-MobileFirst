@@ -148,7 +148,7 @@ main {
 .main-tables-container {
     display: flex;
     align-items: center;
-    height: 353px;
+    height: 360px;
     padding: 60px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -330,12 +330,13 @@ main {
 
 .product-details__container {
     width: 100%;
-    max-width: 770px;
+    max-width: 900px;
     height: auto;
     margin: 0 auto;
 }
 
 .product-details__card {
+    min-width: 300px;
     padding: 16px 18px;
     background-color: var(--warm-black);
     margin-bottom: 16px;

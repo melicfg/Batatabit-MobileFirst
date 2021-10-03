@@ -1,0 +1,13 @@
+.product-details__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 770px;
+    margin: 0 auto;
+}
+
+.product-details__card {
+    width: 90%;
+    max-width: 330px;
+    margin: 27px;
+}
