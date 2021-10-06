@@ -336,7 +336,7 @@ main {
 }
 
 .product-details__card {
-    min-width: 300px;
+    min-width: 277px;
     padding: 16px 18px;
     background-color: var(--warm-black);
     margin-bottom: 16px;
